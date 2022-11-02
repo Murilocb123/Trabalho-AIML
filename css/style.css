@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Inter Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Inter Regular'), url('/fonts/Inter.woff') format('woff');
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Inter Regular, sans-serif;
+    font-weight: bolder;
+    color:white
+}
+body{
+    background-image: radial-gradient(circle at top, #276873, transparent, transparent);
+    background-repeat: no-repeat;
+    background-color: #111111;
+    /* background-color: #111111; */
+}
+nav{
+    margin:0;
+    padding: 15px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.NavCenter{
+    list-style: none;
+    display: flex; 
+    justify-content: center;/*define como o navegador distribui o espaço entre e ao redor dos
+                                     itens de conteúdo ao longo do eixo principal de um contêiner flexível
+                                      e do eixo embutido de um contêiner de grade.*/ 
+    float: left;
+    width: 80vw;                                                   
+}
+.NavCenter li{
+    margin-left: 30px;
+    float: left;
+    display: flex;
+    white-space: nowrap;
+}
+   
+.button{
+    justify-content: end;
+    box-shadow: 0px 7px 14px -6px #276873;
+    background-color:#1d2838;
+    display: inline-block;
+    width: initial;
+    cursor:pointer;
+    padding: 12px 24px;
+    border-radius:8px;
+    white-space: nowrap;
+    text-shadow:0px 1px 0px #3d768a;
+ }
+ .NavLeft{
+    justify-content:start;
+    float: left;
+    display: flex;
+ }
+ .NavRight{
+    width: auto;
+    display: flex;
+    justify-content:end;
+    float: right;
+ }
+.links{
+    text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+
+/* #blockLogo{
+    width: 100px;
+    left:50%;
+    margin-left: -100px;
+    A propriedade 'Transform' CSS permite girar, dimensionar, inclinar ou traduzir um elemento. 
+    Ele modifica o espaço de coordenadas do modelo de formatação visual CSS
+    transform: translateY(-20px);
+    margin-right: auto; 
+    display: block; /*Define a tag como um bloco
+    position: fixed;
+
+} */
+.blockLogo{
+    width: 75px;
+    border-radius: 90%;
+    background-image: radial-gradient(#276873, transparent, transparent);
+}
