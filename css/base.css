@@ -13,18 +13,19 @@
     color:white
 }
 body{
-    background-image: radial-gradient(circle at top, #276873, transparent, transparent);
-    background-repeat: no-repeat;
-    background-color: #111111;
+    background-color: #000000;
     /* background-color: #111111; */
+    height: 3000px;
 }
 nav{
-    margin:0;
+    width: 100%;
     padding: 15px;
     height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(180deg, rgba(36,93,102,0.6783088235294117) 4%, rgba(0,0,0,0.7511379551820728) 95%);
+    position: fixed;
 } 
 .NavCenter{
     list-style: none;
@@ -44,7 +45,7 @@ nav{
    
 .button{
     justify-content: end;
-    box-shadow: 0px 7px 14px -6px #276873;
+    /* box-shadow: 0px 7px 14px -6px #276873; */
     background-color:#1d2838;
     display: inline-block;
     width: initial;
@@ -52,7 +53,7 @@ nav{
     padding: 12px 24px;
     border-radius:8px;
     white-space: nowrap;
-    text-shadow:0px 1px 0px #3d768a;
+    /* text-shadow:0px 1px 0px #3d768a; */
  }
  .NavLeft{
     justify-content:start;
