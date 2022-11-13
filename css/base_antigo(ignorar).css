@@ -13,20 +13,18 @@
     color:white
 }
 body{
-    background-color: #276873;
+    background-image: radial-gradient(circle at top, #276873, transparent, transparent);
+    background-repeat: no-repeat;
+    background-color: #111111;
     /* background-color: #111111; */
-    height: 3000px;
 }
 nav{
-    width: 100%;
+    margin:0;
     padding: 15px;
     height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(180deg, rgba(36,93,102,0.6783088235294117) 4%, rgba(0,0,0,0.7511379551820728) 95%);
-    position: fixed;
-
 } 
 .nav-itens{
     list-style: none;
@@ -46,7 +44,7 @@ nav{
    
 .button{
     justify-content: end;
-    /* box-shadow: 0px 7px 14px -6px #276873; */
+    box-shadow: 0px 7px 14px -6px #276873;
     background-color:#1d2838;
     display: inline-block;
     width: initial;
@@ -54,15 +52,7 @@ nav{
     padding: 12px 24px;
     border-radius:8px;
     white-space: nowrap;
-    /* text-shadow:0px 1px 0px #3d768a; */
- }
- .button:hover{
-    transition : 706ms;/*Transição entre dois estados de elemento*/
-    padding: 10px 18px;
-    margin-right: 6px;
-    margin-left: 6px;
-    transform : translateY(-0px);
-    background-color: #3183FF;
+    text-shadow:0px 1px 0px #3d768a;
  }
  .NavLeft{
     justify-content:start;
