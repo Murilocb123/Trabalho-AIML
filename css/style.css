@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'Inter Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Inter Regular'), url('/fonts/Inter.woff') format('woff');
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Inter Regular, sans-serif;
+    font-size: 14px;
+    color:white
+}
+a{
+    text-decoration: none;
+    transition: 0.3;
+}
+a:hover{
+    opacity: 0.75;
+}
+#logo-nav{
+    width: 75px;
+    border-radius: 90%;
+    background-image: radial-gradient(#276873, transparent, transparent);
+}
+nav{
+     display: flex; /*Para colocar os itens da nav um do lado do outro */
+     justify-content: space-around;/*o espaço ao redor seja metade do espaço entre eles*/
+     align-items: center;
+     background-color: rgba(24, 31, 34, 0.69);
+     height: 8vh;/* vh ou viewport height(traduzido: altura da janela de visualização) é uma unidade resposiva que se adapta a altura da janela de visualização do usuario */
+     position: fixed;
+     width: 100%;
+}
+main{
+   background: url("../img/backgroundt_temp.jpg") no-repeat
+   center center;/*o center 2x se refere ao eixo X e Y*/
+   background-size: cover;/*caso a resolução do monitor seja maior que o da imagem*/
+   height: 100vh;
+}
+
+.nav-itens{
+    list-style: none;
+    display: flex;
+}
+.nav-itens li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+.button{
+    justify-content: end;
+    /* box-shadow: 0px 7px 14px -6px #276873; */
+    background-color:#1d2838;
+    display: inline-block;
+    width: initial;
+    cursor:pointer;
+    padding: 12px 24px;
+    border-radius:8px;
+    white-space: nowrap;
+    /* text-shadow:0px 1px 0px #3d768a; */
+ }
+ .button a:hover{
+    opacity: 1;
+ }
+ .button:hover{
+    transition : 706ms;/*Transição entre dois estados de elemento*/
+    padding: 10px 18px;
+    margin-right: 6px;
+    margin-left: 6px;
+    transform : translateY(-0px);
+    background-color: #3183FF;
+ }
+ .mobile-option{
+    display: none;
+    cursor: pointer;
+}
+.mobile-option div{
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    margin: 8px;
+    transition: 0.3s;
+}
+.visible-to-mobile{
+    display: none;
+}
+@media only screen and (max-width:999px){
+    body{
+        overflow-x: hidden; /*caso algo transborda fica escondido do body*/
+    }
+    .button{
+        display: none;
+    }
+    nav{
+        justify-content: space-between;
+    }
+    #logo-nav{
+        margin-left: 15px;
+    }
+    .mobile-option{
+        margin-right: 15px;
+    }
+    .nav-itens{
+        position: absolute;
+        top:8vh;
+        right: 0;
+        width: 29vw;/*(viewport width) utiliza a largura e altura da viewport respectivamente. No caso da tela*/
+        height: 92vh;
+        background-color: rgba(24, 31, 34, 0.69);
+        flex-direction: column;
+        align-items: left;
+        justify-content: space-around;/*espalhar entre o espaço disponivel*/
+        padding-right: 20px;
+        transform: translateX(100%); /*Deixa todo o conteudo para fora do do tamanho do site para fazer a animação*/
+        transition: transform 0.4s ease-in;
+    }
+    .visible-to-mobile{
+        display: block;
+    }
+    .mobile-option{
+        display: block;
+    }
+    .nav-itens li{
+        opacity: 0;
+    }
+    .nav-itens.active{
+        transform: translateX(0);
+
+    }
+}
+@media only screen and (max-width:750px){
+    .nav-itens{
+        width: 50vw;
+    }
+    .nav-itens li{
+       
+    }
+
+}
+@keyframes navLinkFade{
+    from{
+        opacity:0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-option.active .linha1{
+    transform: rotate(-45deg) translate(-8px,8px);
+}
+.mobile-option.active .linha2{
+    opacity: 0;
+}
+.mobile-option.active .linha3{
+    transform: rotate(45deg) translate(-7px,-7px);
+}
