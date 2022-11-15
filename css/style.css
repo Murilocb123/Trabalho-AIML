@@ -134,9 +134,6 @@ main{
     .nav-itens{
         width: 50vw;
     }
-    .nav-itens li{
-       
-    }
 
 }
 @keyframes navLinkFade{
