@@ -10,32 +10,45 @@
 </head>
 
 <body>
-    <header>
-        <!--Navigation-->
-        <nav>
-            <img id="logo-nav" src="img/iconNav2.png" alt="Imagem" class="blockLogo">
-            <ul class="nav-itens">
-                <li class="visible-to-mobile"><a href="#">Login/Sign up</a></li>
-                <li><a href="#">Sobre a linguagem</a></li>
-                <!---Com fotos e videos-->
-                <li><a href="#">Importante saber</a></li>
-                <!---Com tabela de dados relevantes sobre o tema-->
-                <li><a href="#">Verificar cadastros</a></li>
-            </ul>
-            <div class="mobile-option">
-                <div class="linha1"></div>
-                <div class="linha2"></div>
-                <div class="linha3"></div>
+    <!--Navigation-->
+    <nav>
+        <img id="logo-nav" src="img/iconNav2.png" alt="Imagem" class="blockLogo">
+        <ul class="nav-itens">
+            <li class="visible-to-mobile"><a href="#">Login/Sign up</a></li>
+            <li><a href="#">Sobre a linguagem</a></li>
+            <!---Com fotos e videos-->
+            <li><a href="#">Importante saber</a></li>
+            <!---Com tabela de dados relevantes sobre o tema-->
+            <li><a href="#">Verificar cadastros</a></li>
+        </ul>
+        <div class="mobile-option">
+            <div class="linha1"></div>
+            <div class="linha2"></div>
+            <div class="linha3"></div>
+        </div>
+        <div class="button">
+            <a href="#">Login/Sign up</a>
+        </div>
+    </nav>
+    <header id="header-index">
+        <div class="container-slides">
+            <div class="slide-item fade">
+                <img src="SliderExample/img_nature_wide.jpg" alt="">
             </div>
-            <div class="button">
-                <a href="#">Login/Sign up</a>
+            <div class="slide-item fade">
+                <img src="SliderExample/img_nature_wide.jpg" alt="">
             </div>
-        </nav>
+            <div class="slide-item fade">
+                <img src="SliderExample/img_mountains_wide.jpg" alt="">
+            </div>
+            <a class="voltar"  onclick="plusSlides(-1)">❮</a>
+            <a class="proximo" onclick="plusSlides(1)">❯</a>    
+        </div>
     </header>
     <main>
 
     </main>
-    <script src="js/mobile-nav.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

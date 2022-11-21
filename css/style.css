@@ -1,3 +1,4 @@
+/*tags gerais and navigation*/
 @font-face {
     font-family: 'Inter Regular';
     font-style: normal;
@@ -15,6 +16,9 @@
 a{
     text-decoration: none;
     transition: 0.3;
+}
+body{
+    background-color: black;
 }
 a:hover{
     opacity: 0.75;
@@ -156,3 +160,23 @@ main{
 .mobile-option.active .linha3{
     transform: rotate(45deg) translate(-7px,-7px);
 }
+/*Cabecalho*/
+#header-index{
+    padding-top: 8vh;
+}
+.contaiter-slides{
+    width: 100vw;
+    position: relative;
+    margin: auto;
+}
+.slide-item img{
+    width: 100%;
+}
+.slide-item{
+    display: none;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
