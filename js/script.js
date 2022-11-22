@@ -32,9 +32,55 @@ class MobileNavbar{
 
 }
 
+class SliderItens{
+  constructor(id){
+     this.slideIndex = 1;
+     this.slideId = id;
+  }
+
+
+  init(){
+    /*Caso queira retornar algo*/
+    return this;
+  }
+
+  viewSlide(n){
+    let i;
+    let slides = document.getElementsByClassName(this.slideId);
+    if (n > slides.length) {
+      this.slideIndex = 1;
+    }
+    if(n < 1 ){
+     this.slideIndex = slides.length;
+    }
+    for (index = 0; index < slides.length; index++) {
+      slides[i].style.display = "none";
+    }
+
+    slides[this.slideIndex - 1].style.display = "block";
+  }
+}
+
+
+/*Iniciando obj navbar*/
 const mobileNavbar = new MobileNavbar(
-    ".mobile-option",
-    ".nav-itens",
-    ".nav-itens li",
+  ".mobile-option",
+  ".nav-itens",
+  ".nav-itens li",
 );
+
 mobileNavbar.init();
+
+/*Iniciando obj navbar*/
+const sliderItens = new SliderItens("slide-item");
+sliderItens.init();
+
+function nextSlider(n){
+  sliderItens.viewSlide(n);
+}
+
+
+
+
+
+

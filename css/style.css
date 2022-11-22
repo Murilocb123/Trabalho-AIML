@@ -173,7 +173,7 @@ main{
     width: 100%;
 }
 .slide-item{
-    display: none;
+     display: none;
 }
 .fade {
     animation-name: fade;
