@@ -4,6 +4,9 @@ class MobileNavbar{
         this.navItens = document.querySelector(navItens);
         this.navLinks = document.querySelectorAll(navlinks);
         this.activeClass = "active";
+        this.buttonIndexRight = document.getElementsByClassName("proximo");
+        this.buttonHeaderNone="pointer-events: none; opacity: 0.5;";
+        this.buttonHeader = "";
         
         this.buttonClick = this.buttonClick.bind(this);
     }
@@ -11,6 +14,13 @@ class MobileNavbar{
       this.navItens.classList.toggle(this.activeClass);
       this.mobileMenu.classList.toggle(this.activeClass);
       this.animacaoLinks();
+      if(this.buttonIndexRight[0].getAttribute("style") == this.buttonHeaderNone)
+        this.buttonIndexRight[0].setAttribute("style", this.buttonHeader);
+      else
+        this.buttonIndexRight[0].setAttribute("style",this.buttonHeaderNone);
+
+  
+      
     }
     animacaoLinks(){
         this.navLinks.forEach((link, index) => {
@@ -41,6 +51,7 @@ class SliderItens{
 
   init(){
     /*Caso queira retornar algo*/
+    this.viewSlide(1);
     return this;
   }
 
@@ -53,7 +64,7 @@ class SliderItens{
     if(n < 1 ){
      this.slideIndex = slides.length;
     }
-    for (index = 0; index < slides.length; index++) {
+    for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
 
@@ -76,11 +87,5 @@ const sliderItens = new SliderItens("slide-item");
 sliderItens.init();
 
 function nextSlider(n){
-  sliderItens.viewSlide(n);
+  sliderItens.viewSlide(sliderItens.slideIndex+=n);
 }
-
-
-
-
-
-

@@ -18,8 +18,6 @@
             <li><a href="#">Sobre a linguagem</a></li>
             <!---Com fotos e videos-->
             <li><a href="#">Importante saber</a></li>
-            <!---Com tabela de dados relevantes sobre o tema-->
-            <li><a href="#">Verificar cadastros</a></li>
         </ul>
         <div class="mobile-option">
             <div class="linha1"></div>
@@ -30,24 +28,81 @@
             <a href="#">Login/Sign up</a>
         </div>
     </nav>
-    <header id="header-index">
-        <div class="container-slides">
-            <div class="slide-item fade">
-                <img src="/SliderExample/img_nature_wide.jpg" alt="" style="width: 100%;">
-            </div>
-            <div class="slide-item fade">
-                <img src="/SliderExample/img_nature_wide.jpg" alt="" style="width: 100%;">
-            </div>
-            <div class="slide-item fade">
-                <img src="/SliderExample/img_mountains_wide.jpg" alt="" style="width: 100%;">
-            </div>
-            <a class="voltar"  onclick="nextSlider(-1)">❮</a>
-            <a class="proximo" onclick="nextSlider(1)">❯</a>    
-        </div>
-    </header>
     <main>
-
+        <header id="header-index">
+            <div class="container-slides">
+                <div class="slide-item fade">
+                    <img src="/img/slide1.png" alt="Slide1">
+                </div>
+                <div class="slide-item fade">
+                    <img src="/img/slide2.png" alt="Slide2">
+                </div>
+                <div class="slide-item fade">
+                    <img src="/img/slide3.png" alt="Slide3">
+                </div>
+                <a class="voltar" onclick="nextSlider(-1)">❮</a>
+                <a class="proximo" onclick="nextSlider(1)">❯</a>
+            </div>
+        </header>
+        <section class="main-content item-center">
+            <div>
+                <h1 class="titulo-index">Descubra tudo sobre AIML</h1>
+                <div class="grid-3-2 grid2-3-Mobile">
+                    <div class="grid-itens-center padding-top-2vh">
+                        <h3 class="text-align-center">Open</h3>
+                        <p>Não é uma caixa preta. Sem palavras-chave "IA" ofuscantes. Nenhum bloqueio do provedor de
+                            soluções. O oposto das APIs ML/NLP.</p>
+                    </div>
+                    <div class="grid-itens-center padding-top-2vh">
+                        <h3 class="text-align-center font-title">Multilíngue</h3>
+                        <p>AIML pode ser escrito em quase qualquer linguagem natural. (Exceto Dolphin - ainda não temos
+                            certeza de como funcionam os sons das baleias).</p>
+                    </div>
+                    <div class="grid-itens-center padding-top-2vh">
+                        <h3 class="text-align-center font-title">Flexível e Extensível</h3>
+                        <p>Integre suas APIs. Bancos de dados. CRM. APIs NLP de intenção e entidade. Fork ou escreva
+                            suas próprias tags. </p>
+                    </div>
+                    <div class="grid-itens-center padding-top-2vh">
+                        <h3 class="text-align-center font-title">Fácil de aprender</h3>
+                        <p>Leva alguns dias para aprender o básico e algumas semanas para dominar, mesmo que você seja
+                            mais um redator do que um programador.</p>
+                    </div>
+                    <div class="grid-itens-center padding-top-2vh">
+                        <h3 class="text-align-center font-title">Baseado em XML</h3>
+                        <p>Adora tags? Etiquetas de ódio? De qualquer forma, as tags são um padrão testado e comprovado.
+                            (PS Estamos trabalhando em uma sintaxe mais simples....)</p>
+                    </div>
+                    <div class="grid-itens-center padding-top-2vh">
+                        <h3 class="text-align-center font-title">Mercado testado</h3>
+                        <p>Parece estúpido simples; trabalha na produção. Basta perguntar a mais de 1 milhão de
+                            desenvolvedores ou procurar os melhores chatbots.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-align-center padding-top-10vh font-title">Intérpretes e bibliotecas de código aberto</h3>
+                <p class="text-align-center padding-top-2vh">Visite-nos no <a class="link-text" href="https://github.com/AIML-Foundation">Github</a> para mais recursos. O software de terceiros deve ser cuidadosamente examinado
+                    antes do uso.</p>
+                <div class="grid-3-1 padding-top-10vh">
+                    <a href="https://github.com/keiffster/program-y"><img src="img/python-logo.svg" alt="logo python"></a>
+                    <a href="https://www.npmjs.com/package/aimlinterpreter"><img src="img/nodejs-logo.svg" alt="logo node"></a>
+                    <a href="https://code.google.com/archive/p/program-ab/"><img src="img/java-logo.svg" alt="logo java"></a>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer-index">
+        <h4>Contatos:</h4>
+        <address>
+            <ul class="list-itens">
+                <li>murilocb1276@gmail.com</li>
+                <li>(47) 9 8890-2398</li>
+            </ul>
+        </address>
+        <a href="http://www.aiml.foundation/" class="link-text">Site Oficial</a>
+    </footer>
+
     <script src="js/script.js"></script>
 </body>
 
