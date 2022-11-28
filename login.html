@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Navigation-->
+    <nav>
+        <img id="logo-nav" src="img/iconNav2.png" alt="Imagem" class="blockLogo">
+        <ul class="nav-itens">
+            <li class="visible-to-mobile"><a href="#">Login/Sign up</a></li>
+            <li><a href="#">Sobre a linguagem</a></li>
+            <!---Com fotos e videos-->
+            <li><a href="#">Importante saber</a></li>
+            <!---Com tabela de dados relevantes sobre o tema-->
+            <li><a href="#">Verificar cadastros</a></li>
+        </ul>
+        <div class="mobile-option">
+            <div class="linha1"></div>
+            <div class="linha2"></div>
+            <div class="linha3"></div>
+        </div>
+        <div class="button">
+            <a href="#">Login/Sign up</a>
+        </div>
+    </nav>
+    <header id="header-index">
+        <div class="container-slides">
+            <div class="slide-item fade">
+                <img src="/SliderExample/img_nature_wide.jpg" alt="" style="width: 100%;">
+            </div>
+            <div class="slide-item fade">
+                <img src="/SliderExample/img_nature_wide.jpg" alt="" style="width: 100%;">
+            </div>
+            <div class="slide-item fade">
+                <img src="/SliderExample/img_mountains_wide.jpg" alt="" style="width: 100%;">
+            </div>
+        </div>
+    </header>
+    <main id="login">
+        <form class="card">
+            <div class="card-header">
+                <h2 id="h2_login">Login</h2>
+            </div>
+            <div class="card-content">
+                <div class="card-content-area">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" id="usuario" autocomplete="off">
+                </div>
+                <div class="card-content-area">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" autocomplete="off">
+                </div>
+            </div>
+            <div class="card-footer">
+                <a href="#"><input type="submit" value="Entrar" class="submit"></a>
+                <a href="#" class="criar_cadastro">Não possui cadastrado?</a>
+            </div>
+        </form>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
