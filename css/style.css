@@ -284,7 +284,9 @@ main {
     margin-top: 20vh;
     background-color: #1d2838;
 }
+/*Tela carlos */
 #login {
+    padding-top:30vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -358,6 +360,37 @@ main {
     color:black;
     text-decoration: none;
 }
+
+
+/*Tela Gabriel*/
+.image{
+    padding-left: 100px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    background-color: rgba(128,128,128,0.5);
+  }
+.image img{
+    width: 400px;
+    height: 200px;
+    padding-left: 150px;
+    padding-top: 50px;
+  }
+.inform {
+    padding: 40px 0;
+    margin: 40px 0;
+    background-color: rgba(128,128,128,0.5);
+  }
+.titulo{
+    text-align: center;
+    font-family: 'Helvetica';
+    font-size: 25px;
+  }
+.conteudo{
+    padding: 20px;
+    text-align: justify;
+    font-family: 'Helvetica';
+    font-size: 16px;
+  }
 
 @media only screen and (max-width:999px) {
     body {

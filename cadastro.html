@@ -3,23 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="img/brain.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>cadastro</title>
 </head>
 
 <body>
     <!--Navigation-->
     <nav>
-        <img id="logo-nav" src="img/iconNav2.png" alt="Imagem" class="blockLogo">
+        <a href="index.html"><img id="logo-nav" src="img/iconNav2.png" alt="Imagem" class="blockLogo"></a>
         <ul class="nav-itens">
             <li class="visible-to-mobile"><a href="#">Login/Sign up</a></li>
-            <li><a href="#">Sobre a linguagem</a></li>
+            <li><a href="Sobre.html">Sobre a linguagem</a></li>
             <!---Com fotos e videos-->
-            <li><a href="#">Importante saber</a></li>
-            <!---Com tabela de dados relevantes sobre o tema-->
-            <li><a href="#">Verificar cadastros</a></li>
+            <li><a href="Galeria.html">Galeria</a></li>
         </ul>
         <div class="mobile-option">
             <div class="linha1"></div>
@@ -27,22 +26,9 @@
             <div class="linha3"></div>
         </div>
         <div class="button">
-            <a href="#">Login/Sign up</a>
+            <a href="login.html">Login/Sign up</a>
         </div>
     </nav>
-    <header id="header-index">
-        <div class="container-slides">
-            <div class="slide-item fade">
-                <img src="/SliderExample/img_nature_wide.jpg" alt="" style="width: 100%;">
-            </div>
-            <div class="slide-item fade">
-                <img src="/SliderExample/img_nature_wide.jpg" alt="" style="width: 100%;">
-            </div>
-            <div class="slide-item fade">
-                <img src="/SliderExample/img_mountains_wide.jpg" alt="" style="width: 100%;">
-            </div>
-        </div>
-    </header>
     <main id="login">
         <form class="card">
             <div class="card-header">
@@ -55,27 +41,36 @@
                 </div>
                 <div class="card-content-area">
                     <label for="email">E-mail</label>
-                    <input type="email" id="usuario" autocomplete="off">
+                    <input type="email" id="email" autocomplete="off">
                 </div>
                 <div class="card-content-area">
                     <label for="phone">Telefone</label>
-                    <input type="tel" id="usuario" autocomplete="off">
+                    <input type="tel" id="phone" autocomplete="off">
                 </div>
                 <div class="card-content-area">
                     <label for="password">Senha</label>
                     <input type="password" id="password" autocomplete="off">
                 </div>
                 <div class="card-content-area">
-                    <label for="password">Confirmar Senha</label>
-                    <input type="password" id="password" autocomplete="off">
+                    <label for="password_conf">Confirmar Senha</label>
+                    <input type="password" id="password_conf" autocomplete="off">
                 </div>
             </div>
             <div class="card-footer">
-                <a href="#"><input type="submit" value="Entrar" class="submit"></a>
-                <a href="#" class="criar_cadastro">Já possui cadastrado?</a>
+                <input type="submit" value="Entrar" class="submit">
             </div>
         </form>
     </main>
+    <footer class="footer-index">
+        <h4>Contatos:</h4>
+        <address>
+            <ul class="list-itens">
+                <li>murilocb1276@gmail.com</li>
+                <li>(47) 9 8890-2398</li>
+            </ul>
+        </address>
+        <a href="http://www.aiml.foundation/" class="link-text">Site Oficial</a>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="icon" type="image/png" href="img/brain.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Navigation-->
+    <nav>
+        <img id="logo-nav" src="img/iconNav2.png" alt="Imagem" class="blockLogo">
+        <ul class="nav-itens">
+            <li class="visible-to-mobile"><a href="#">Login/Sign up</a></li>
+            <li><a href="#">Sobre</a></li>
+            <!---Com fotos e videos-->
+            <li><a href="#">Home</a></li>
+            <!---Com tabela de dados relevantes sobre o tema-->
+            <li><a href="#">Cadastros</a></li>
+        </ul>
+        <div class="mobile-option">
+            <div class="linha1"></div>
+            <div class="linha2"></div>
+            <div class="linha3"></div>
+        </div>
+        <div class="button">
+            <a href="#">Login/Sign up</a>
+        </div>
+    </nav>
+    <header id="header-index">
+        <div class="container-slides">
+            <div class="slide-item fade">
+                <img src="/SliderExample/img_nature_wide.jpg" alt="" style="width: 100%;">
+            </div>
+            <div class="slide-item fade">
+                <img src="/SliderExample/img_nature_wide.jpg" alt="" style="width: 100%;">
+            </div>
+            <div class="slide-item fade">
+                <img src="/SliderExample/img_mountains_wide.jpg" alt="" style="width: 100%;">
+            </div>
+            <a class="voltar"  onclick="nextSlider(-1)">❮</a>
+            <a class="proximo" onclick="nextSlider(1)">❯</a>
+        </div>
+    </header>
+    <main>
+      <div class="image">
+          <h1 class="titulo">Galeria</h1>
+          <img src="img/bot.jpg">
+          <img src="img/alice.jpg">
+      </div>
+      <div class="image">
+          <img src="img/arquitetura.png">
+          <img src="img/criador.jpeg">
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
